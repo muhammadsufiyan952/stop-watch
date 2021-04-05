@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>stop watch</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body{
+    background:rgb(112, 112, 112);
+    height: 600px;
+    overflow: hidden;
+}
+.label{
+    font-size: 100px;
+    line-height: 100px;
+    margin: 4px;
+    width: 120px;
+}
+table{
+    margin: 30px auto;
+    text-align: center;
+}
+h1{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 100px;
+    color: aliceblue;
+}
+td>button{
+   width: 100px;
+   padding: 5px;
+   border: 1px solid;
+   font-size: 20px;
+   border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <h1>STOP WATCH</h1>
+    <table cellpadding=5>
+        <tr>
+            <td>
+                <h1 class="label" id="hr">00</h1>
+            </td>
+            <td>
+                <h1 class="label" id="min">00</h1>
+            </td>
+            <td>
+                <h1 class="label" id="sec">00</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="start()" id="start" >start</button>
+            </td>
+            <td>
+                <button onclick="reset()" id="reset" >reset</button>
+            </td>
+            <td>
+                <button onclick="stop()" id="stop" >stop</button>
+            </td> 
+           
+        </tr>
+    </table>
+</body>
+<script src="app.js"></script>
+</html>
